@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #rcorners1{
+            background-color: #73ad21;
+            width: 200px;
+            height: 150px;
+            padding: 20px;
+            border-radius: 15px 50px 30px 5px;
+        }
+        #rcorners2{
+            background-color: #73ad21;
+            width: 200px;
+            height: 150px;
+            padding: 20px;
+            /* 15px and 30px is top and bottom,  50px is left/right */
+            border-radius: 15px 50px 30px;
+        }
+        #rcorners3{
+            background-color: #73ad21;
+            width: 200px;
+            height: 150px;
+            padding: 20px;
+            /* 15px top and bottom,  50px left and right */
+            border-radius: 15px 50px;
+        }
+        #rcorners4{
+            background-color: #73ad21;
+            width: 200px;
+            height: 150px;
+            padding: 20px;
+            /* 15px for top+right+bottom+left */
+            border-radius: 15px;
+        }
+        #rcorners5{
+            background-color: #73ad21;
+            width: 200px;
+            height: 150px;
+            padding: 20px;
+            border-radius: 15px / 50px;
+        }
+        #rcorners6{
+            background-color: #73ad21;
+            width: 200px;
+            height: 150px;
+            padding: 20px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>The border-radius Property</h1>
+
+    <p>Four values - border-radius: 15px 50px 30px 5px:</p>
+    <p id="rcorners1"></p>
+    
+    <p>Three values - border-radius: 15px 50px 30px:</p>
+    <p id="rcorners2"></p>
+    
+    <p>Two values - border-radius: 15px 50px:</p>
+    <p id="rcorners3"></p>
+    
+    <p>One value - border-radius: 15px:</p>
+    <p id="rcorners4"></p>
+
+    <p>Elliptical border - border-radius: 15px / 50px:</p>
+<p id="rcorners5"></p>
+
+<p>Ellipse border - border-radius: 50%:</p>
+<p id="rcorners6"></p>
+</body>
+</html>
